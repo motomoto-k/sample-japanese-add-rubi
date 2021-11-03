@@ -13,11 +13,13 @@
     - 拡張パックに関する情報 [https://marketplace.visualstudio.com/items?itemName=golang.Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
 
 ## 事前準備
-* GoLang 1.17.1 をダウンロードして `D:\\GoLang\\go1.17.1` ディレクトりに解凍する
+* GoLang 1.17.1 をダウンロードして `D:\\GoLang\\go1.17.1` ディレクトリに解凍する
 
 ## ビルド方法
 * Ctrl + B でビルド。
 * `./build` 配下に `app.exe` バイナリファイルが生成される
+* Shift + Ctrl + P でコマンドパレットを表示、タスクの実行を選択
+* `02. Copy text files` を実行する
 
 ## 使い方
 * APIキーの設定

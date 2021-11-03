@@ -89,12 +89,12 @@ func main() {
 			} else {
 				lineData.Furigana = "Failed"
 				lineData.Surface = req.Text
-				fmt.Fprintf(os.Stderr, "RES ERROR : %v\n", res.Error)
+				stderr(logger, "RES ERROR : %v\n", res.Error)
 			}
 		} else {
 			lineData.Furigana = "Failed"
 			lineData.Surface = req.Text
-			fmt.Fprintf(os.Stderr, "ERROR : %v\n", err)
+			stderr(logger, "ERROR : %v\n", err)
 		}
 
 		results = append(results, lineData)
