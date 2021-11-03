@@ -1,0 +1,35 @@
+{
+    "editor.codeLens": false,
+    "editor.wordWrap": "off",
+    "editor.tabSize": 4,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.folding": true,
+    "editor.lineNumbers": "on",
+    "editor.scrollBeyondLastLine": true,
+    "files.eol": "\n",
+    "files.encoding": "utf8",
+    "terminal.integrated.env.windows": {
+        "GOROOT": "D:\\GoLang\\go1.17.1\\go",
+        "GOPATH": "D:\\GoLang\\go1.17.1\\modules",
+        "GOBIN": "D:\\GoLang\\go1.17.1\\modules\\bin",
+        "GO111MODULE": "on",
+        "PATH": "${env:PATH};D:\\GoLang\\go1.17.1\\modules\\bin"
+    },
+    "go.goroot": "D:\\GoLang\\go1.17.1\\go",
+    "go.gopath": "D:\\GoLang\\go1.17.1\\modules",
+    "go.toolsEnvVars": {
+        "GOROOT": "D:\\GoLang\\go1.17.1\\go",
+        "GOPATH": "D:\\GoLang\\go1.17.1\\modules",
+        "GOBIN": "D:\\GoLang\\go1.17.1\\modules\\bin",
+        "GO111MODULE": "on",
+    },
+    "gopls": {
+        "build.experimentalWorkspaceModule": true
+    }
+}

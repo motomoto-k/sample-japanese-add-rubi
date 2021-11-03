@@ -1,0 +1,60 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "env": {
+            "GOPATH": "D:\\GoLang\\go1.17.1\\modules",
+            "PATH": "${env:PATH};D:\\GoLang\\go1.17.1\\modules\\bin;${env:GOROOT}\\bin"
+        }
+    },
+    "tasks": [
+        {
+            "label": "01. Build App",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "build",
+                "-o",
+                "${workspaceRoot}\\build\\app.exe",
+                "${workspaceRoot}\\app\\main.go"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "02. Copy text files",
+            "type": "shell",
+            "command": "COPY",
+            "args": [
+                "/A",
+                "/Y",
+                "${workspaceRoot}\\app\\*.txt",
+                "${workspaceRoot}\\build\\*.txt",
+            ],
+            "group": "build"
+        },
+        {
+            "label": "03. Clean go environment",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "clean",
+                "-r",
+                "-cache",
+                "${workspaceRoot}\\app"
+            ]
+        },
+        {
+            "label": "04. Clean go environment [Deep]",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "clean",
+                "-r",
+                "-modcache",
+                "${workspaceRoot}\\app"
+            ]
+        }
+    ]
+}
